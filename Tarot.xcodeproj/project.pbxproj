@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F40C4E921D1EB6EF005C8010 /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C4E911D1EB6EF005C8010 /* MajorArcanaCard.swift */; };
-		F40C4E9A1D1F6A30005C8010 /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C4E991D1F6A30005C8010 /* TarotUITests.swift */; };
 		F4EF0FCE1D1D08470010D8F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF0FCD1D1D08470010D8F1 /* AppDelegate.swift */; };
 		F4EF0FD01D1D08470010D8F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF0FCF1D1D08470010D8F1 /* ViewController.swift */; };
 		F4EF0FD31D1D08480010D8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EF0FD11D1D08480010D8F1 /* Main.storyboard */; };
@@ -17,21 +16,8 @@
 		F4EF0FE11D1D167E0010D8F1 /* Modle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF0FE01D1D167E0010D8F1 /* Modle.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F40C4E9C1D1F6A30005C8010 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4EF0FC21D1D08460010D8F1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4EF0FC91D1D08470010D8F1;
-			remoteInfo = Tarot;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		F40C4E911D1EB6EF005C8010 /* MajorArcanaCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
-		F40C4E971D1F6A30005C8010 /* TarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F40C4E991D1F6A30005C8010 /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
-		F40C4E9B1D1F6A30005C8010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4EF0FCA1D1D08470010D8F1 /* Tarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EF0FCD1D1D08470010D8F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EF0FCF1D1D08470010D8F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,13 +29,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F40C4E941D1F6A30005C8010 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4EF0FC71D1D08470010D8F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,20 +39,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F40C4E981D1F6A30005C8010 /* TarotUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F40C4E991D1F6A30005C8010 /* TarotUITests.swift */,
-				F40C4E9B1D1F6A30005C8010 /* Info.plist */,
-			);
-			path = TarotUITests;
-			sourceTree = "<group>";
-		};
 		F4EF0FC11D1D08460010D8F1 = {
 			isa = PBXGroup;
 			children = (
 				F4EF0FCC1D1D08470010D8F1 /* Tarot */,
-				F40C4E981D1F6A30005C8010 /* TarotUITests */,
 				F4EF0FCB1D1D08470010D8F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				F4EF0FCA1D1D08470010D8F1 /* Tarot.app */,
-				F40C4E971D1F6A30005C8010 /* TarotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,24 +89,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F40C4E961D1F6A30005C8010 /* TarotUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F40C4E9E1D1F6A31005C8010 /* Build configuration list for PBXNativeTarget "TarotUITests" */;
-			buildPhases = (
-				F40C4E931D1F6A30005C8010 /* Sources */,
-				F40C4E941D1F6A30005C8010 /* Frameworks */,
-				F40C4E951D1F6A30005C8010 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F40C4E9D1D1F6A30005C8010 /* PBXTargetDependency */,
-			);
-			name = TarotUITests;
-			productName = TarotUITests;
-			productReference = F40C4E971D1F6A30005C8010 /* TarotUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		F4EF0FC91D1D08470010D8F1 /* Tarot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4EF0FDC1D1D08480010D8F1 /* Build configuration list for PBXNativeTarget "Tarot" */;
@@ -166,10 +116,6 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Cameron atkinson";
 				TargetAttributes = {
-					F40C4E961D1F6A30005C8010 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = F4EF0FC91D1D08470010D8F1;
-					};
 					F4EF0FC91D1D08470010D8F1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -189,19 +135,11 @@
 			projectRoot = "";
 			targets = (
 				F4EF0FC91D1D08470010D8F1 /* Tarot */,
-				F40C4E961D1F6A30005C8010 /* TarotUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F40C4E951D1F6A30005C8010 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4EF0FC81D1D08470010D8F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,14 +153,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F40C4E931D1F6A30005C8010 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F40C4E9A1D1F6A30005C8010 /* TarotUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4EF0FC61D1D08470010D8F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,14 +165,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F40C4E9D1D1F6A30005C8010 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F4EF0FC91D1D08470010D8F1 /* Tarot */;
-			targetProxy = F40C4E9C1D1F6A30005C8010 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F4EF0FD11D1D08480010D8F1 /* Main.storyboard */ = {
@@ -264,28 +186,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F40C4E9F1D1F6A31005C8010 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TarotUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3493402.TarotUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Tarot;
-			};
-			name = Debug;
-		};
-		F40C4EA01D1F6A31005C8010 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TarotUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.edu.rmit.s3493402.TarotUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Tarot;
-			};
-			name = Release;
-		};
 		F4EF0FDA1D1D08480010D8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,14 +296,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F40C4E9E1D1F6A31005C8010 /* Build configuration list for PBXNativeTarget "TarotUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F40C4E9F1D1F6A31005C8010 /* Debug */,
-				F40C4EA01D1F6A31005C8010 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		F4EF0FC51D1D08460010D8F1 /* Build configuration list for PBXProject "Tarot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
