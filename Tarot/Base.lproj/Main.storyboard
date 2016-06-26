@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tarot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQg-58-UhU">
+                                <rect key="frame" x="225" y="305" width="150" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="q7P-lW-ENm">
+                                <rect key="frame" x="225" y="15" width="150" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="OIs-uc-Zya"/>
+                                    <constraint firstAttribute="height" constant="260" id="gTC-vD-bbt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vr-pp-4GN">
+                                <rect key="frame" x="248" y="400" width="105" height="30"/>
+                                <state key="normal" title="Ask The Oracle"/>
+                                <connections>
+                                    <action selector="askTheOracle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVf-FM-qVX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59625243551376239" green="0.78347530154768208" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q7P-lW-ENm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-5" id="2ZD-Cr-5Nh"/>
+                            <constraint firstItem="OQg-58-UhU" firstAttribute="top" secondItem="q7P-lW-ENm" secondAttribute="bottom" constant="30" id="K0m-3N-57y"/>
+                            <constraint firstItem="OQg-58-UhU" firstAttribute="centerX" secondItem="8Vr-pp-4GN" secondAttribute="centerX" id="McO-1R-X3J"/>
+                            <constraint firstItem="q7P-lW-ENm" firstAttribute="width" secondItem="OQg-58-UhU" secondAttribute="width" id="fqI-lg-tuO"/>
+                            <constraint firstItem="q7P-lW-ENm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsX-F7-dTD"/>
+                            <constraint firstItem="q7P-lW-ENm" firstAttribute="trailing" secondItem="OQg-58-UhU" secondAttribute="trailing" id="p23-EN-bRx"/>
+                            <constraint firstItem="q7P-lW-ENm" firstAttribute="leading" secondItem="OQg-58-UhU" secondAttribute="leading" id="u9B-ZY-caE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Vr-pp-4GN" secondAttribute="bottom" constant="170" id="xYZ-dx-p28"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgCard" destination="q7P-lW-ENm" id="DaD-nt-vsX"/>
+                        <outlet property="lblAnswers" destination="OQg-58-UhU" id="4y2-gi-N6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fool" width="300" height="519"/>
+    </resources>
+</document>

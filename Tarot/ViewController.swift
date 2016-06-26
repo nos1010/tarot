@@ -1,0 +1,73 @@
+//
+//  ViewController.swift
+//  Tarot
+//
+//  Created by Rodney Cocker on 20/03/2016.
+//  Copyright © 2016 RMIT. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController
+{
+    // Property referencing the label in the view
+    @IBOutlet weak var lblAnswers: UILabel!
+    
+    // Property referencing the Tarot card
+    @IBOutlet weak var imgCard: UIImageView!
+    
+    // Property referencing the model for managing data and business logic
+    var model = Model()
+    
+    // Respond to the user clicking a button by providing advice from the oracle
+    
+    @IBAction func askTheOracle(sender: UIButton)
+    {
+        // Retrieve a random message from the oracle
+        lblAnswers?.text = model.respond()
+        let description = model.currentCard.getCardDescription()
+        // Change the image in the UIImageView to the currently selected card
+        imgCard.image = UIImage(named:model.currentCard.imageName)
+    }
+    
+    /*
+    @IBAction func askTheOracle(sender: UIButton)
+    {
+        var cardImageName:String = ""
+        var message:String = ""
+        
+        model.respond(&cardImageName, message: &message)
+        
+        lblAnswers.text = message
+        imgCard.image = UIImage(named:cardImageName)
+    }
+    */
+    
+    /*
+    @IBAction func askTheOracle(sender: UIButton)
+    {
+        // This variable will receive a tuple from the respond method
+        let response:(cardImageName: String, cardMessage:String) = model.respond()
+        
+        lblAnswers.text = response.cardMessage
+        imgCard.image = UIImage(named:response.cardImageName)
+    }
+     */
+    
+ 
+    
+    
+    // Lifecycle method for performing tasks after the view has loaded
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    // Lifecycle method for clearing up memory resources
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
